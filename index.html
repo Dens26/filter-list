@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liste filtré">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Filter list</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <h1 class="read-only">Liste filtrée</h1>
+    </header>
+    <!-- End Header -->
+    <!-- Menu de navigation -->
+    <nav class="header-nav">
+        <div class="nav-title">
+            <a href="https://randomuser.me/" target="blank">
+                <img src="./images/logo.svg" alt="Logo">
+                <h2>Users</h2>
+            </a>
+        </div>
+        <div class="main-nav">
+            <div class="nav-group">
+                <a href="./dashboard.html" title="Tableau de bord">
+                    <img src="./images/dashboard.svg" alt="Tableau de bord">
+                    <p class="nav-text">Tableau de bord</p>
+                </a>
+            </div>
+            <div class="nav-group">
+                <a href="./messenger.html" title="Messagerie">
+                    <img src="./images/speech-bubble.svg" alt="Messagerie">
+                    <p class="nav-text">Messagerie</p>
+                </a>
+            </div>
+            <div class="nav-group">
+                <a href="./index.html" title="Base de donnée" class="active">
+                    <img src="./images/server.svg" alt="Base de donnée">
+                    <p class="nav-text">Base de donnée</p>
+                </a>
+            </div>
+            <div class="nav-group">
+                <a href="./calendar.html" title="Calendrier">
+                    <img src="./images/calendar.svg" alt="Calendrier">
+                    <p class="nav-text">Calendrier</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Menu navigation -->
+    <div class="separator"></div>
+    <!-- DataBase -->
+    <div class="database-results">
+        <div class="database-results-group">
+            <a href="#"><img class="database-search-img" src="./images/search.svg" alt="logo recherche"></a>
+            <input type="text" class="database-search-input" id="database-search-input"
+                placeholder="Recherchez un utilisateur">
+            <label class="database-search-label" for="database-search-input">Résultats de la base de donnée</label>
+            <p class="error-message"></p>
+        </div>
+        <div class="database-title-group">
+            <p class="database-title-name">Nom</p>
+            <p class="database-title-e-mail">Email</p>
+            <p class="database-title-phone">Téléphone</p>
+        </div>
+        <div class="cards">
+        </div>
+    </div>
+    <!-- End DataBase -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

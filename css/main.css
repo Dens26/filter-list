@@ -1,0 +1,224 @@
+/* Général */
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: clamp(1px, 5vw, 50px);;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.read-only{
+    visibility: hidden;
+    position: absolute;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+.page h2{
+    padding: 15px;
+}
+.img-construction{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+}
+/* End Général */
+
+/* Menu navigation */
+.active{
+    background: rgb(200, 200, 200);
+    color: green;
+}
+img{
+    width: 32px;
+}
+.nav-title a{
+    display: flex;
+}
+.nav-group a{
+    display: flex;
+    gap: 0.5rem;
+    padding: 10px;
+}
+.nav-group a:hover{
+    background: rgb(236, 236, 236);
+}
+.nav-text{
+    display: none;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav{
+    display: flex;
+    gap: 0.5rem;
+}
+.separator{
+    margin-top: 10px;
+    height: 2px;
+    background: gray;
+}
+@media screen and (min-width:576px) {
+    .main-nav{
+        gap: 2rem;
+    }
+}
+@media screen and (min-width:768px){
+    .main-nav{
+        gap: 0.5rem;
+    }
+    .nav-text{
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (min-width:1100px){
+    body{
+        display: grid;
+        grid-template-columns: 250px auto;
+    }
+    .header-nav{
+        flex-flow: column;
+        position: absolute;
+        gap: 0;
+    }
+    .main-nav{
+        flex-flow: column;
+        gap: 0;
+        margin-top: 50px;
+    }
+    .nav-group a{
+        width: 250px;
+        padding: 10px;
+        margin: 0 -50px;
+    }
+    .separator{
+        position: absolute;
+        top: -10px;
+        left: 250px;
+        height: 100%;
+        width: 2px;
+    }
+}
+/* End Menu navigation */
+
+/* Database Results */
+.database-title-group{
+    display: none;
+}
+.database-results-group{
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    margin-top: 15px;
+}
+.database-search-img{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 5px;
+}
+.database-search-input{
+    height: 45px;
+    padding:  0 40px;
+    border-radius: 5px;
+}
+.database-search-label{
+    margin: 15px 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.card{
+    flex: 1 1 250px;
+    min-width: 250px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(56, 56, 56);
+}
+.picture{
+    border-radius: 50%;
+}
+.card-group{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+@media screen and (min-width:1100px) {
+    .database-title-group{
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        font-weight: 700;
+        padding: 10px;
+    }
+    .cards{
+        flex-flow: column;
+        gap: 0;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        flex: 0;
+        border-radius: 0;
+        box-shadow: none;
+        gap: 0;
+    }
+    .card-group, .email, .phone{
+        justify-content: left;
+    }
+}
+/**
+        <div class="card">
+            div class="card-group">
+                <img class="picture" src="#" alt="#">
+                <span class="first-name"></span>
+                <span class="last-name"></span>
+            </div>
+            <span class="e-mail"></span>
+            <span class="phone"></span>
+        </div>
+ */
+/* End Database Results*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
